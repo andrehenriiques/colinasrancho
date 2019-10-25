@@ -1,6 +1,6 @@
 # Aluminio Colinas Gerenciador de Produtos
 
-Aplicação desenvolvida em Ionic 4 com firebase de banco de dados.
+Aplicação desenvolvida em Ionic 4 + Firebase de banco de dados.
 
 Gerenciador de produtos de uma empresa de alumínio.
 Login Master poderá excluir e adicionar os produtos e o Login de convidado só visualizará os produtos.
