@@ -1,0 +1,37 @@
+<ion-content class="swiper-no-swiping">
+  <div class="container top" [hidden]="keyboard.isVisible">
+    <img src="/assets/img/aluminio.png">
+
+    <ion-segment (ionChange)="segmentChanged($event)" mode="ios" value="login">
+      
+    </ion-segment>
+  </div>
+
+  <ion-slides>
+    <ion-slide>
+      <div class="slide-inner ion-padding">
+        <span>Login</span>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="email" placeholder="E-mail" [(ngModel)]="userLogin.email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="password" placeholder="Senha" [(ngModel)]="userLogin.password"></ion-input>
+        </ion-item>
+
+        <ion-button class="ion-margin-top" (click)="login()" color="light" expand="block">
+          Entrar
+        </ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="ocean">
+    <div class="waves" [ngStyle]="{'background-position-x': wavesPosition + 'px'}"></div>
+
+    <div class="container bottom ion-text-center" [hidden]="keyboard.isVisible">
+      <span>Aplicativo para gerenciamento dos produtos: Alumínio Colinas !</span>
+    </div>
+  </div>
+</ion-content>
